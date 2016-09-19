@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no" >
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ionic.min.css">
+    <link rel="stylesheet" href="css/pubstyle.css">
+    <title></title>
+    <style>
+
+        .slider-slide {
+            padding-top: 80px;
+        }
+    </style>
+</head>
+<body ng-app="ionicApp">
+<div class="navbar navbar-default" style="z-index: 100 ;">
+    <!--<div class="bar bar-header" style="background-color: #f1f1f1">   -->     <!--副标题subheader ?-->
+    <div class="button-bar">
+        <a class="button">
+            <span>规格信息</span>
+        </a>
+        <a class="button" >
+            <span>价格趋势</span>
+        </a>
+        <a  class="button" >
+            <span>消费者反馈</span>
+        </a>
+    </div>
+</div>
+
+<div class="bar bar-subheader" id="top-info">
+
+</div>
+<span style="color:white;position: absolute;top: 55px;z-index: 5">&nbsp;69850644887</span>       <!--不会固定在顶部-->
+<div style="position: absolute;top: -30px;width:100%">
+    <ion-slide-box active-slide="myActiveSlide">
+        <ion-slide>
+            <div><img src="img/goodseg.jpg" alt="" style="width:100%"></div>
+        </ion-slide>
+        <ion-slide>
+            <div><img src="img/goodseg.jpg" alt="" style="width:100%"></div>
+        </ion-slide>
+        <ion-slide>
+            <div><img src="img/goodseg.jpg" alt="" style="width:100%"></div>
+        </ion-slide>
+    </ion-slide-box>
+</div>
+
+
+
+
+<div style="position: absolute;top:1%">
+    <p>2</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+</div>
+
+
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ionic.bundle.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-ui-router.min.js"></script>
+<script src="js/pubapp.js"></script>
+<script>
+    angular.module('ionicApp', ['ionic'])
+            .controller('SlideController', function($scope) {
+                $scope.myActiveSlide = 1;
+            })
+</script>
+</body>
+</html>
