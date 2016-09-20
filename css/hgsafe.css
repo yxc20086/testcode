@@ -1,0 +1,207 @@
+
+
+#selects-body{
+
+    background-color: #419641;
+    text-align: center;
+}
+.select .select-qy .select-gz{
+    /*position: absolute;*/
+    margin: 20px;
+    padding:20px 0;
+}
+.select-body .select img{
+    margin-top:16%;
+    width:35%;
+    height:35%;
+}
+.select-body h3{
+    font-size:26px;
+}
+.select-body h4{
+    text-align: center;
+    color: white;
+    font-size:20px;
+    margin-bottom: 20%;
+}
+.select-body h3{
+    margin-top:20%;
+}
+#secfooter{
+    padding-top: 20%;
+}
+
+/*login.html css样式表*/
+#login-body{
+    background-color: #eee;
+    text-align: center;
+}
+.login-header h4 , .info-qy-header h4 , .search-header h4 , .search-result h4 , .check-menu-header h4 , .basic-info-header h4 ,.process-info-header h4 ,.new-check-info-header h4 , .check-info-header h4 , .qua-info-header h4 , .new-qua-info-header h4 ,.new-check-info-header h4 , .in-info-header h4{
+    margin: 5% 5% 0 0;
+    padding:10px;
+    /*text-align: center;*/
+}
+.rebtn{
+    float:left;
+}
+/*.rebtn p , img{
+    text-align: center;
+}*/
+.leftbtn{
+    float:left;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+.contanier img{
+    margin:8% 0 0 0;
+
+}
+.input-form{
+    margin:6% 10% 0 10%;      /*卡号密码输入界面响应式距离屏幕边界距离*/
+}
+/*#lg-hd-img img{
+    width: 100%;        !*屏幕上方图片自适应,无效? 为什么?*!
+    height: auto;
+}*/
+/*.contanier input-group{
+!*    padding:2%;
+    margin:2%;*!
+    !*display: none;*!
+}*/
+.login-btn-img{
+    display: inline;
+/*   width:5%;
+    height:5%;*/
+    margin-top:10%;
+}
+/*.login-header img{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}*/
+
+/*.login-header .glyphicon-menu-left{
+    color:white;
+    margin:3%;
+    display: inline;
+}
+
+.login-header h4{
+    text-align: center;
+    margin-top:3%;
+    display: inline;
+}*/
+/*info-qy-html样式表*/
+#info-qy-body , #search-body , #basic-info-body{
+    background-color: #f7f7f7;
+}
+#info-qy-body .info h4 {
+    padding: 1.5% 0 0 0;
+
+}
+#info-qy-body .info p {
+    background-color: white;
+    padding: 1% 2% 1% 1%;
+/*    margin-top: 1px;*/
+}
+#info-qy-body .info .info-list{
+    background-color: white;
+}
+#info-qy-body .info img {
+    display: inline;
+    width:40%;
+    margin:1% 3% 1% 5%;
+}
+#info-qy-body .footer{
+/*    background-color: red;
+    width:100%;
+    position: absolute;*/
+/*    display:inline;*/
+}
+
+/*search.html样式*/
+
+#search-body , #check-menu-body , #process-info-body , #check-info-body , #qua-info-body ,#new-qua-info-body ,#in-info-body{
+    background-color: #f7f7f7;
+}
+.info-goods-nu{
+    background-color: white;
+    padding: 1%;
+}
+.info-goods-nu h4 , .info-goods-nu1 h4{
+    padding: 1.5% 0 0 0;
+    margin:2.5% auto 0 10px;
+}
+.info-goods-nu1{
+    background-color: white;
+    margin-top: 3%;
+    padding: 1%;
+}
+.search-result{
+    background-color: white;
+}
+/*basic-info.html样式*/
+#basic-info-body .basic-info h4{
+
+    padding: 1% 2% 0 0;
+    /*    margin-top: 1px;*/
+}
+.basic-info-content p{
+    background-color: white;
+    padding-right: auto;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    line-height: 2;
+
+    /*    margin-top: 1px;*/
+}
+/*process-info.html样式*/
+
+#process-info-body .process-info h4{
+
+    padding: 1% 2% 0 0;
+    /*    margin-top: 1px;*/
+}
+.process-info-content p{
+    background-color: white;
+    padding-right: auto;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    line-height: 2;
+    /*    margin-top: 1px;*/
+}
+/*qua-info样式*/
+#qua-info-body .qua-info h4{
+    padding: 1% 2% 1% 2%;
+    /*    margin-top: 1px;*/
+}
+
+#check-info-body .check-info h4{
+    padding: 1% 2% 0 2%;
+    /*    margin-top: 1px;*/
+}
+ .new-check-info h4{
+    padding: 1% 2% 1% 2%;
+    /*    margin-top: 1px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

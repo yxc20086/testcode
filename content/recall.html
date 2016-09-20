@@ -1,0 +1,82 @@
+<!DOCT<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no" >
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/hgsafe.css">
+
+    <title></title>
+</head>
+<body id="process-info-body">
+
+<div class="process-info-header">
+    <div>
+        <a href="check-menu.html"><span class="glyphicon glyphicon-menu-left leftbtn"></span></a>       <!--返回上一页,需要修改-->
+        <h4>环节信息填报</h4>
+    </div>
+</div>
+
+<form action="" class="recall-info">
+<div class="process-info" style="background-color: white">
+    <h4>批次信息</h4>
+    <div class="basic-info-content">
+        <p>商品条形码:之前扫描结果 <br />
+            产品批次号:之前填写结果</p>
+    </div>
+
+        <div class="input-group">
+            <div class="input-group-addon" style="background-color: white">召回类型:</div> <input type="text" class="form-control">
+        </div>
+        <div class="input-group">
+            <div class="input-group-addon" style="background-color: white">召&nbsp;&nbsp;回&nbsp;人:</div> <input type="text" class="form-control">
+        </div>
+        <div class="input-group">
+            <div class="input-group-addon" style="background-color: white">召回方式:</div> <input type="text" class="form-control">
+        </div>
+
+            <div class="input-group">
+                <div class="input-group-addon pull-left" style="background-color: white">召回原因:</div>
+            </div>
+        <table width="100%">
+            <tr>
+                <td colspan="2"><textarea style="width:100%;" placeholder="请填写召回原因"></textarea></td>
+            </tr>
+        </table>
+        <input type="image" style="margin-top:8%" class="img-responsive ; center-block" src="../img/zh.png"  onclick="document.forms['recall-info'].submit()">
+
+</div>
+</form>
+<!--
+<table class="table table-responsive" style="background-color: white">
+    <tr>
+        <td style="width:30%">召回类型:</td>
+        <td><input type="text" style="width:100%"></td>
+    </tr>
+    <tr>
+        <td style="width:30%">召回人:</td>
+        <td><input type="text" style="width:100%"></td>
+    </tr>
+    <tr>
+        <td style="width:30%">召回方式:</td>
+        <td><input type="text" style="width:100%"></td>
+    </tr>
+    <tr>
+        <td style="width:30%">召回原因:</td>
+        <td></td>
+    </tr>
+    <tr>
+        c
+    </tr>
+    <tr>
+        <td colspan="2"> <input type="image" style="margin-top: 5%" class="img-responsive ; center-block" src="../img/zh.png"  onclick="document.forms['process-info'].submit()"></td>
+    </tr>
+</table>-->
+
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

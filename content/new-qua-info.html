@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no" >
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/hgsafe.css">
+    <title></title>
+</head>
+<body id="new-qua-info-body">
+
+<!--<div class="new-qua-info-header">
+    <div>
+        <a href="qua-info.html"><span class="glyphicon glyphicon-menu-left leftbtn"></span></a>       &lt;!&ndash;返回上一页,需要修改&ndash;&gt;
+        &lt;!&ndash;<input type="submit" value="保存" style="float:right ; margin:1% 3% auto auto ; background:transparent;border-width:0 ;">&ndash;&gt;
+        <h4>产品资质信息填报</h4>
+    </div>
+</div>-->
+
+<div class="new-check-info" style="background-color: white">
+    <h4>批次信息</h4>
+    <div class="basic-info-content">
+        <p>商品条形码:之前扫描结果 <br />
+            产品批次号:之前填写结果</p>
+    </div>
+</div>
+
+    <form action="" class="form-group" name="new-qua-info" style="background-color: white">
+        <div class="input-group">
+            <div class="input-group-addon" style="background-color: white">资质类型:</div>
+            <div>
+                <select class="form-control" style="width:100% ;">
+                    <option value="资质类型1">资质类型1</option>
+                    <option value="资质类型2">资质类型2</option>
+                    <option value="资质类型3">资质类型3</option>
+                    <option value="资质类型4">资质类型4</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-group-addon" style="background-color: white">资质编号:</div> <input type="text" class="form-control">
+        </div>
+        <div class="input-group">
+            <div class="input-group-addon" style="background-color: white">发证机关:</div> <input type="text" class="form-control">
+        </div>
+        <div class="input-group">
+            <div class="input-group-addon" style="background-color: white">有&nbsp;效&nbsp;期:</div> <input type="text" class="form-control">
+        </div>
+        <div class="input-group">
+            <div class="input-group-addon" style="background-color: white">许可范围:</div> <input type="text" class="form-control col-md-8">
+        </div>
+
+        <div class="loadpic" >           <!--只是样式,需要调用手机文件管理,后期完善-->
+            <img src="../img/pic.png" alt="上传图片" style="margin:2% ; width:20% ;" >
+        </div>
+
+        <input type="image" style="margin-top: 5%" class="img-responsive ; center-block" src="../img/bc.png"  onclick="document.forms['new-qua-info'].submit()">
+
+    </form>
+
+
+    <script src="../js/jquery-3.1.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

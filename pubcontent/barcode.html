@@ -1,0 +1,79 @@
+<!--<div style="background-color: red;">
+<div style="height: 15px;">&nbsp;</div>
+    <div style="padding: 2% 0 0 2% ;background-color: #fdfdfe;" >
+        <p style="margin-top: 3px">商品条码信息</p>
+        <hr/>
+        <p style="vertical-align: middle">689748555515588778311</p>
+    </div>
+    <div style="background-color: #fdfdfe">
+        <h4>批次信息</h4>
+        <hr/>
+        <form action="" class="">
+            <input class="form-control" type="text">
+        </form>
+    </div>
+</div>-->
+<form action="" name="search-form">
+    <div >
+        <span style="line-height: 3;margin-left: 2%" ><b>商品条码信息</b></span>
+        <table class="table">
+            <tr>
+                <td ><span style="margin-left: 1%" id="barcode">689748555515588778311</span></td>
+            </tr>
+        </table>
+        <div style="background-color: #f7f7f7">&nbsp;</div>
+        <div>
+            <span style="line-height: 3;margin-left: 2%"><b>批次信息</b></span>
+            <table class="table">
+                <tr>
+                    <td>
+                        <input type="text" id="batch" placeholder="请输入产品批次号" style="width:100%;border:solid 1px;border-color: #e7e7e7;margin-left: 0.5%">
+                    </td>
+                </tr>
+            </table>
+            <table class="table">
+                <tr>
+                    <td style="width:100%"><b>操作信息</b></td>
+                    </tr>
+            </table>
+            <table>
+                <tr>
+                    <td style="width: 45%;"></td>
+                    <td>
+                        <div style="display: block">
+                            <img src="../img/cx1.png" alt="" style="position:absolute;right: 37%;" onclick="goods_search()">
+                            <img src="../img/cx2.png" alt="" style="position:absolute;right: 3%;" onclick="review_search()">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</form>
+<div style="background-color: #f7f7f7;margin-top: 13%">&nbsp;</div>
+<div style="margin-left: 1%"><b>验证信息</b></div>
+<hr/>
+<p style="text-indent: 0.5em;color:red" id="result"></p>
+
+<script>
+    function goods_search() {
+        var barcode = document.getElementById("barcode").innerHTML;
+        var batch = document.getElementById("batch").value;
+        if(barcode=='689748555515588778311'&&batch=='20160101'){
+          window.location.href = 'goods-info.html';
+      }else{
+          alert('查询产品批次号不存在!');
+          return document.getElementById("result").innerHTML = "改条码所对应的批次号:&nbsp;"+ batch +"不存在,请重新核对后再输入";
+      }
+    }
+    function review_search(){
+        var barcode = document.getElementById("barcode").innerHTML;
+        var batch = document.getElementById("batch").value;
+        if(barcode=='689748555515588778311'&&batch=='20160101'){
+            window.location.href = 'goods-info.html';
+        }else{
+            alert('查询产品批次号不存在!');
+            return document.getElementById("result").innerHTML = "改条码所对应的批次号:&nbsp;"+ batch +"不存在,请重新核对后再输入";
+        }
+    }
+</script>

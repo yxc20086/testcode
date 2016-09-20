@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no" >
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/ionic.min.css">
+    <link rel="stylesheet" href="../css/pubstyle.css">
+    <title></title>
+</head>
+<body data-ng-app="pubapp">          <!--style="overflow:auto"  ?-->
+
+<div ui-view="header"></div>
+<div ui-view="detail-menu"></div>
+<div ui-view></div>
+
+
+<div class="navbar navbar-default navbar-fixed-bottom" style="height:50px">
+    <div class="button-bar">
+        <a class="button" name="menu" ui-sref="news1">
+            <img src="../img/ggfw2.png" alt="" style="position:absolute;bottom:23px;text-align:center;width:20px;">
+            <span style="position:absolute;top:25%;text-align:center;font-size:5px;text-indent: -1em;">公共服务</span>
+        </a>
+        <a class="button" name="menu" ui-sref="company-list">
+            <img src="../img/qyxx2.png" alt="" style="position:absolute;bottom:23px;text-align:center;width:20px;">
+            <span style="position:absolute;top:25%;text-align:center;font-size:5px;text-indent: -1em">企业信息</span>
+        </a>
+        <a class="button" name="menu" ui-sref="goods-barcode-info">
+            <img src="../img/spxx2.png" alt="goods-info" style="position:absolute;bottom:23px;width:20px;">
+            <span style="position:absolute;top:25%;text-align:center;font-size:5px;text-indent: -1em">商品信息</span>
+            <!--style="position:absolute;top:25%;left:40%;vertical-align:middle;font-size:5px">-->
+        </a>
+        <a class="button" name="menu" ui-sref="private-info">
+            <img src="../img/geren2.png" alt="private-info" style="position:absolute;bottom:23px;text-align:center;width:20px;">
+            <span style="position:absolute;top:25%;text-align:center;font-size:5px;text-indent: -1em">个人中心</span>
+        </a>
+    </div>
+</div>
+
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/ionic.bundle.min.js"></script>
+<script src="../js/angular.min.js"></script>
+<script src="../js/angular-ui-router.min.js"></script>
+<script src="../js/pubapp.js"></script>
+</body>
+</html>
