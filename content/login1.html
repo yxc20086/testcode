@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no" >
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/hgsafe.css">
+    <title></title>
+</head>
+<body id="login-body">
+
+<!--<div class="login-header">
+    <div>
+        &lt;!&ndash;<a href="../select-suf.html"><span class="glyphicon glyphicon-menu-left"></span></a>
+        <h4 class="tltle">企业登录</h4>&ndash;&gt;
+       &lt;!&ndash; <img src="../img/cc2.png" id="lg-hd-img" alt="" class="img-responsive center-block" style="z-index: 1">&ndash;&gt;
+        &lt;!&ndash;<div style="background:url(../img/cc2.png) no-repeat;" class="img-responsive center-block rebtn">&ndash;&gt;
+            <a href="../select-suf.html"><span class="glyphicon glyphicon-menu-left leftbtn"></span></a>       &lt;!&ndash;返回上一页,需要修改&ndash;&gt;
+            <h4>企业登录</h4>
+    </div>
+</div>-->
+   <!-- <div class="contanier">
+        <img src="../img/user.png" alt="用户徽章">
+    </div>
+    <div class="container">
+        <div class="form-group">
+            <input type="text" placeholder="卡号" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="卡密码" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="企业用户名" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="企业密码" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="校验码" class="form-control">
+        </div>
+    </div>
+    <div class="btn-group">
+            <button type="submit"><img src="../img/d1.png" alt="登录"></button>
+
+        <a href="#"><img src="../img/c2.png" alt="登录"></a>
+    </div>
+</div>-->
+
+ <div class="contanier" >
+       <img src="../img/user.png" alt="用户徽章" style="width:20%;height:20%">
+ </div>
+<form action="" class="form-group input-form" name="login-info">
+    <div class="form-group">
+        <input type="text" value="" id="card_number" placeholder="卡号" class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="password" value="" id="card_password" placeholder="卡密码" class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="text" value="" id="com_name" placeholder="企业用户名" class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="password" value="" id="com_password" placeholder="企业密码" class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="text" name="captcha" placeholder="校验码" class="form-control">
+    </div>
+    <div class="btn-group login-btm-img">
+       <!-- <button type="submit"><img src="../img/d1.png" alt="登录"></button>-->
+        <!--<a href="info-qy.html" class="load" type="submit"><img src="../img/d1.png" alt="登录"></a>-->
+        <!--<input type="image"  src="../img/d1.png"  onclick="document.forms['login-info'].submit()">-->
+        <img src="../img/d1.png" alt="登录" onclick="submit1()">
+
+        <!--<span>&nbsp;&nbsp;</span>-->
+        <img src="../img/c2.png" alt="重置" onclick="reset1()">
+        <!--<input type="image"  src="../img/d1.png"  onclick="document.forms['login-info'].submit()">-->
+        <!--<input type="image"  src="../img/c2.png" onclick="document.forms['login-info'].reset(); return false;">-->
+    </div>
+</form>
+
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    var submit1 = function() {
+        var card_number = document.getElementById("card_number").value;
+        var card_password = document.getElementById("card_password").value;
+        var com_name = document.getElementById("com_name").value;
+        var com_password = document.getElementById("com_password").value;
+        if(card_number == '' || card_password =='' || com_name == '' || com_password == '') {
+            alert('请输入完整的登录信息!');
+        }else{
+            /*window.location.href = 'info-qy.html';*/
+           confirm( 'success');
+            /*confirm('登陆成功!');*/
+        }
+    };
+    var reset1 = function(){
+        document.forms['login-info'].reset(); return false;
+    }
+</script>
+
+</body>
+</html>
