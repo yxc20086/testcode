@@ -21,9 +21,9 @@
     </style>
     <title></title>
 </head>
-<body>
+<body style="background-color: #f7f7f7">
 
-<div class="container">
+<div class="container" style="background-color: white">
     <h4>批次信息</h4>
     <table class="table table-bordered">
         <tr>
@@ -35,7 +35,7 @@
     </table>
 </div>
 
-<div style="background-color: red;">
+<div>
     <div>
         <img src="../img/left.png" alt="" style="position:fixed;left: 2%;top:55%;z-index: 100">
         <img src="../img/right.png" alt="" style="position:fixed;right: 2%;top:55%;z-index: 100">
@@ -56,7 +56,7 @@
             </div>
             <div style="z-index: 999">
                 <hr />
-                <a href="#" style=";text-decoration:none;color: #000;">
+                <a style="text-decoration:none;color: #000;">
                     <div class="row">
                         <div class="col-xs-12">
                             <p>温度(摄氏度)</p>
@@ -68,6 +68,13 @@
                     </div>
                 </a>
                 <hr />
+
+                <div id="chart1" style="position:absolute;top:10%;width: 100%;height:45%"></div>
+                <div style="position: absolute;top:90%;left:45%">
+                    <a class="glyphicon glyphicon-chevron-left" style="text-decoration:none"></a>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;2016年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <a class="glyphicon glyphicon-chevron-right" style="text-decoration:none"></a>		<!--去掉链接的下划线style="text-decoration:none"-->
+                </div>
         </div>
     </div>
 </div>
@@ -90,5 +97,16 @@
 <script src="../js/angular.min.js"></script>
 <script src="../js/angular-ui-router.min.js"></script>
 <script src="../js/pubapp.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var data = [[30,60,80,10,11,22,40,21,60,83,94,68]];
+        var data_max = 100; //Y轴最大刻度
+        var line_title = ["价格"]; //曲线名称
+        var y_label = "单位:(元)"; //Y轴标题
+        var x_label = ""; //X轴标题
+        var x = [1,2,3,4,5,6,7,8,9,10,11,"12&nbsp;&nbsp;&nbsp;&nbsp;月"]; //定义X轴刻度值
+        j.jqplot.diagram.base("chart1", data, line_title, "商品价格信息", x, x_label, y_label, data_max, 1);
+    });
+</script>
 </body>
 </html>
