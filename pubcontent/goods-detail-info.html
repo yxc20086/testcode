@@ -10,14 +10,57 @@
     <title></title>
 </head>
 <body>
+<div class="container" style="margin-top: 5%;">
+    <table class="table table-bordered">
+        <tr>
+            <td colspan="2" id="name_num"></td>
+        </tr>
+        <tr>
+            <td id="name_zh"></td>
+            <td id="date"></td>
+        </tr>
+        <tr>
+            <td id="brand"></td>
+            <td id="classification"></td>
+        </tr>
+        <tr>
+            <td id="volume"></td>
+            <td id="standard"></td>
+        </tr>
+    </table>
+</div>
+<div style="background-color: #f7f7f7;height: 10px;">&nbsp;</div>
 
-
-
-
-
-
-
-
+<div style="background-color: white;margin: 2% 0 2% 7%">
+    <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="../img/eg.png" alt="图片1" style="width:100%"></div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="../img/eg.png" alt="图片2" style="width:100%"></div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="../img/eg.png" alt="图片3" style="width:100%"></div>
+    </div>
+</div>
+<div style="background-color: #f7f7f7">&nbsp;</div>
+<div>
+<div class="container">
+    <div>
+        <h4 style="margin: 2% 0 2% 1%;">生产企业</h4>
+        <table class="table table-bordered">
+            <tr>
+                <td id="com_name"></td>
+            </tr>
+            <tr>
+                <td id="com_Add"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+    <div style="background-color: white;margin: 2% 0 2% 7%">
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="../img/eg.png" alt="图片1" style="width:100%"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="../img/eg.png" alt="图片2" style="width:100%"></div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="../img/eg.png" alt="图片3" style="width:100%"></div>
+        </div>
+    </div>
+</div>
 
 
 <script src="../js/jquery-3.1.0.min.js"></script>
@@ -25,5 +68,18 @@
 <script src="../js/ionic.bundle.min.js"></script>
 <script src="../js/angular.min.js"></script>
 <script src="../js/angular-ui-router.min.js"></script>
+<script>
+    window.onload = function(){
+        document.getElementById('name_num').innerHTML = '商品名称：65978595442';
+        document.getElementById('name_zh').innerHTML = '商品名称：德运纯牛奶';
+        document.getElementById('date').innerHTML = '保质期：1年';
+        document.getElementById('brand').innerHTML = '商品商标：DEVONDALE';
+        document.getElementById('classification').innerHTML = '商品分类：乳制品';
+        document.getElementById('volume').innerHTML = '规格/型号：1000ML';
+        document.getElementById('standard').innerHTML = '标准号：GB/T2005';
+        document.getElementById('com_name').innerHTML = '企业名称：蒙牛集团公司';
+        document.getElementById('com_Add').innerHTML = '生产地址：内蒙古XXX市XX县XXX街';
+    }
+</script>
 </body>
 </html>
