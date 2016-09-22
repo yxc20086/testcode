@@ -11,12 +11,12 @@
 </head>
 <body id="process-info-body">
 
-<div class="process-info-header">
+<!--<div class="process-info-header">
     <div>
-        <a href="check-menu.html"><span class="glyphicon glyphicon-menu-left leftbtn"></span></a>       <!--返回上一页,需要修改-->
+        <a href="check-menu.html"><span class="glyphicon glyphicon-menu-left leftbtn"></span></a>       &lt;!&ndash;返回上一页,需要修改&ndash;&gt;
         <h4>环节信息填报</h4>
     </div>
-</div>
+</div>-->
 
 <form action="" class="recall-info">
 <div class="process-info" style="background-color: white">
@@ -25,8 +25,60 @@
         <p>商品条形码:之前扫描结果 <br />
             产品批次号:之前填写结果</p>
     </div>
+</div>
+    <form action="" name="recall">
+        <div style="background-color: white">
+            <table class="table table-bordered">
+                <tr>
+                    <td>
+                        <div style=" height:25px;">
+                            <span style="font-size: 16px">
+                                召回类型:
+                            </span>
+                            <input  style="width:65%;height:25px;border: none"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style=" height:25px;">
+                            <span style="font-size: 16px">
+                                召&nbsp;回&nbsp;人:
+                            </span>
+                            <input  style="width:65%;height:25px;border: none"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style=" height:25px;">
+                            <span style="font-size: 16px">
+                                召回方式:
+                            </span>
+                            <input  style="width:65%;height:25px;border: none"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style=" height:30px;">
+                            <span style="font-size: 16px">
+                                召回原因:
+                            </span>
+                            </div>
+                        <div style="padding: 3px 10px 10px 10px;">
+                            <textarea name="a" style="width:100%;height:100px;margin-top: 2px" placeholder="请填写召回原因"></textarea>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <input type="image" style="margin-top:3%" class="img-responsive ; center-block" src="../img/zh.png"  onclick="document.forms['recall-info'].submit()">
+    </form>
 
-        <div class="input-group">
+
+
+        <!--<div class="input-group">
             <div class="input-group-addon" style="background-color: white">召回类型:</div> <input type="text" class="form-control">
         </div>
         <div class="input-group">
@@ -47,7 +99,7 @@
         <input type="image" style="margin-top:8%" class="img-responsive ; center-block" src="../img/zh.png"  onclick="document.forms['recall-info'].submit()">
 
 </div>
-</form>
+</form>-->
 <!--
 <table class="table table-responsive" style="background-color: white">
     <tr>

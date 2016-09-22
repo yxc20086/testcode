@@ -24,8 +24,70 @@
         <p>商品条形码:之前扫描结果 <br />
             产品批次号:之前填写结果</p>
     </div>
-    <form action="" class="form-group" name="new-check-info">
-        <div class="input-group">
+    <form action="" class="form-group" name="new-active-info">
+        <table class="table table-bordered">
+            <tr>
+                <td>
+                    <div style=" height:25px;">
+        <span style="font-size: 16px">
+            生产活动名称:
+        </span>
+                        <input  style="width:65%;height:25px;border: none"/>&nbsp;</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style=" height:25px;">
+        <span style="font-size: 16px">
+            生产活动顺序:
+        </span>
+                        <input  style="width:65%;height:25px;border: none"/>&nbsp;</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style=" height:25px;">
+        <span style="font-size: 16px">
+            活动开始时间:
+        </span>
+                        <input  style="width:65%;height:25px;border: none"/>&nbsp;</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style=" height:25px;">
+        <span style="font-size: 16px">
+            活动结束时间:
+        </span>
+                        <input  style="width:65%;height:25px;border: none"/>&nbsp;</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style=" height:25px;">
+        <span style="font-size: 16px">
+            负责人:
+        </span>
+                        <input  style="width:75%;height:25px;border: none"/>&nbsp;</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style=" height:25px;">
+        <span style="font-size: 16px">
+            扫码地址:
+        </span>
+                        <input  style="width:75%;height:25px;border: none"/>&nbsp;</div>
+                </td>
+            </tr>
+        </table>
+        <div class="loadpic">           <!--只是样式,需要调用手机文件管理,后期完善-->
+            <img src="../img/pic.png" alt="上传图片" style="margin-left:2%; width:10% ;" >
+        </div>
+        <input type="image" style="margin-top: 5%" class="img-responsive ; center-block" src="../img/bc.png"  onclick="document.forms['new-active-info'].submit()">
+    </form>
+</div>
+       <!-- <div class="input-group">
             <div class="input-group-addon" style="background-color: white">生产活动名称:</div> <input type="text" class="form-control">
         </div>
         <div class="input-group">
@@ -44,12 +106,14 @@
             <div class="input-group-addon" style="background-color: white">扫码地址:</div> <input type="text" class="form-control col-md-8">
         </div>
 
-        <div class="loadpic">           <!--只是样式,需要调用手机文件管理,后期完善-->
+        <div class="loadpic">           &lt;!&ndash;只是样式,需要调用手机文件管理,后期完善&ndash;&gt;
             <img src="../img/pic.png" alt="上传图片" style="margin:2% ; width:20% ;" >
         </div>
         <input type="image" style="margin-top: 5%" class="img-responsive ; center-block" src="../img/bc.png"  onclick="document.forms['new-check-info'].submit()">
     </form>
-</div>
+</div>-->
+
+
     <script src="../js/jquery-3.1.0.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 

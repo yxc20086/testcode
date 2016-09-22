@@ -144,7 +144,7 @@
 /*basic-info.html样式*/
 #basic-info-body .basic-info h4{
 
-    padding: 1% 2% 0 0;
+    padding: 1% 2% 0 2%;
     /*    margin-top: 1px;*/
 }
 .basic-info-content p{
@@ -161,7 +161,7 @@
 
 #process-info-body .process-info h4{
 
-    padding: 1% 2% 0 0;
+    padding: 1% 2% 0 2%;
     /*    margin-top: 1px;*/
 }
 .process-info-content p{

@@ -23,10 +23,39 @@
         <p>商品条形码:之前扫描结果 <br />
             产品批次号:之前填写结果</p>
     </div>
-
+</div>
 
 <form action="" class="form-group" name="process-info">
-    <div class="input-group">
+    <div style="background-color: white">
+    <table class="table table-bordered">
+        <tr>
+            <td>
+                <div style=" height:25px;">
+        <span style="font-size: 16px">
+            环节名称:
+        </span>
+                    <input  style="width:65%;height:25px;border: none"/></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style=" height:25px;">
+        <span style="font-size: 16px">
+            环节顺序:
+        </span>
+                    <input  style="width:65%;height:25px;border: none"/></div>
+            </td>
+        </tr>
+    </table>
+        <div class="loadpic">
+            <img src="../img/pic.png" alt="上传图片" style="margin:0 0 2% 2% ; width:10% ;" >
+        </div>
+    </div>
+    <input type="image" style="margin-top: 7%" class="img-responsive ; center-block" src="../img/bc.png"  onclick="document.forms['process-info'].submit()">
+</form>
+
+
+    <!--<div class="input-group">
         <div class="input-group-addon" style="background-color: white">环节名称:</div> <input type="text" class="form-control">
     </div>
     <div class="input-group">
@@ -39,9 +68,8 @@
 
     <input type="image" style="margin-top: 10%" class="img-responsive ; center-block" src="../img/bc.png"  onclick="document.forms['process-info'].submit()">
 
-</form>
+</form>-->
 
-</div>
 <script src="../js/jquery-3.1.0.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 

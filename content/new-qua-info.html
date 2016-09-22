@@ -26,7 +26,73 @@
     </div>
 </div>
 
-    <form action="" class="form-group" name="new-qua-info" style="background-color: white">
+<form action="" class="new-qua-info">
+    <div style="background-color: white">
+        <table class="table table-bordered">
+            <tr>
+                <td>
+                    <div style=" height:25px;">
+        <span style="font-size: 16px">
+                资质类型:
+            <select  style="width:70% ;position:absolute;left:25%;border: none;">
+                <option value=""></option>
+                <option value="资质类型1">资质类型1</option>
+                <option value="资质类型2">资质类型2</option>
+                <option value="资质类型3">资质类型3</option>
+                <option value="资质类型4">资质类型4</option>
+            </select>
+        </span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style=" height:25px;">
+        <span style="font-size: 16px">
+            资质编号:
+        </span>
+                        <input  style="width:65%;height:25px;border: none"/></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style=" height:25px;">
+        <span style="font-size: 16px">
+            发证机关:
+        </span>
+                        <input  style="width:65%;height:25px;border: none"/></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style=" height:25px;">
+        <span style="font-size: 16px">
+            有&nbsp;&nbsp;效&nbsp;&nbsp;期:
+        </span>
+                        <input  style="width:65%;height:25px;border: none"/></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style=" height:25px;">
+        <span style="font-size: 16px">
+            许可范围:
+        </span>
+                        <input  style="width:65%;height:25px;border: none"/></div>
+                </td>
+            </tr>
+
+        </table>
+        <div class="loadpic" >           <!--只是样式,需要调用手机文件管理,后期完善-->
+            <img src="../img/pic.png" alt="上传图片" style="margin:2% ; width:10% ;" >
+        </div>
+    </div>
+    <input type="image" style="margin-top: 5%" class="img-responsive ; center-block" src="../img/bc.png"  onclick="document.forms['new-qua-info'].submit()">
+</form>
+
+
+
+   <!-- <form action="" class="form-group" name="new-qua-info" style="background-color: white">
         <div class="input-group">
             <div class="input-group-addon" style="background-color: white">资质类型:</div>
             <div>
@@ -51,13 +117,12 @@
             <div class="input-group-addon" style="background-color: white">许可范围:</div> <input type="text" class="form-control col-md-8">
         </div>
 
-        <div class="loadpic" >           <!--只是样式,需要调用手机文件管理,后期完善-->
+        <div class="loadpic" >           &lt;!&ndash;只是样式,需要调用手机文件管理,后期完善&ndash;&gt;
             <img src="../img/pic.png" alt="上传图片" style="margin:2% ; width:20% ;" >
         </div>
 
         <input type="image" style="margin-top: 5%" class="img-responsive ; center-block" src="../img/bc.png"  onclick="document.forms['new-qua-info'].submit()">
-
-    </form>
+    </form>-->
 
 
     <script src="../js/jquery-3.1.0.min.js"></script>

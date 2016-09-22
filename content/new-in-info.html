@@ -24,8 +24,73 @@
         <p>商品条形码:之前扫描结果 <br />
             产品批次号:之前填写结果</p>
     </div>
+</div>
+    <form action="" class="new-in-info">
+        <div style="background-color: white">
+            <table class="table table-bordered">
+                <tr>
+                    <td>
+                        <div style=" height:25px;">
+        <span style="font-size: 16px">
+                选择仓库:
+            <select  style="width:70% ;position:absolute;left:25%;border: none;">
+                <option value=""></option>
+                <option value="仓库1">仓库1</option>
+                <option value="仓库2">仓库2</option>
+                <option value="仓库3">仓库3</option>
+                <option value="仓库4">仓库4</option>
+            </select>
+        </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style=" height:25px;">
+        <span style="font-size: 16px">
+            入库编号:
+        </span>
+                            <input  style="width:65%;height:25px;border: none"/></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style=" height:25px;">
+        <span style="font-size: 16px">
+            经&nbsp;&nbsp;办&nbsp;&nbsp;人:
+        </span>
+                            <input  style="width:65%;height:25px;border: none"/></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style=" height:25px;">
+        <span style="font-size: 16px">
+            入库日期:
+        </span>
+                            <input  style="width:65%;height:25px;border: none"/></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style=" height:25px;">
+        <span style="font-size: 16px">
+            单品入库数量:
+        </span>
+                            <input  style="width:65%;height:25px;border: none"/></div>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <input type="image" style="margin-top: 5%" class="img-responsive ; center-block" src="../img/bc.png"  onclick="document.forms['new-in-info'].submit()">  <!--check-info是表格的name-->
+    </form>
 
 
+
+
+
+<!--
     <form action="" class="form-group" name="new-in-info">
         <div class="input-group">
             <div class="input-group-addon" style="background-color: white">选择仓库:</div>
@@ -38,9 +103,6 @@
                 </select>
             </div>
         </div>
-
-
-
         <div class="input-group">
             <div class="input-group-addon" style="background-color: white">入库单编号:</div> <input type="text" class="form-control">
         </div>
@@ -57,9 +119,9 @@
 
 
 
-        <input type="image" style="margin-top: 5%" class="img-responsive ; center-block" src="../img/bc.png"  onclick="document.forms['new-in-info'].submit()">  <!--check-info是表格的name-->
+        <input type="image" style="margin-top: 5%" class="img-responsive ; center-block" src="../img/bc.png"  onclick="document.forms['new-in-info'].submit()">  &lt;!&ndash;check-info是表格的name&ndash;&gt;
 
-    </form>
+    </form>-->
 
 
     <script src="../js/jquery-3.1.0.min.js"></script>
