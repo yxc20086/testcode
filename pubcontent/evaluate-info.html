@@ -4,8 +4,8 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no" >
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="pubstyle.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/pubstyle.css">
     <style type="text/css">
         body {background:#fff;margin:0 auto;padding: 0;font:12px Arial;color:#000;line-height:1.2em}
         div,form,img,ul,ol,li,dl,dt,dd {margin: 0; padding: 0; border: 0;}
@@ -178,9 +178,6 @@
     <input type="image" style="margin-top: 5%" class="img-responsive ; center-block" src="../img/bc.png"  onclick="document.forms['evaluate-info'].submit()">
 </form>
 
-
-
-
 <!-- END 星级评分 -->
 <script type="text/javascript">
     var Class = {
@@ -236,7 +233,7 @@
                         starlist[flag].className = starlist[flag].className + nowClass;
                     }
                 }
-            };
+            }
             if (isIE){ //FIX IE下样式错误
                 var li = document.getElementById(star).getElementsByTagName('li');
                 for (var i = 0, len = li.length; i < len; i++) {
