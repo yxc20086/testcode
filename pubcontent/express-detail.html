@@ -4,8 +4,8 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no" >
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/pubstyle.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="pubstyle.css">
     <style type="text/css">
         html,body{margin:0;padding:0;}
         .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
@@ -33,12 +33,12 @@
 <div>       <!--插入百度地图-->
     <div style="width:100%;height: 300px;border:#ccc solid 1px;" id="dituContent"></div>
 </div>
-<script src="../js/jquery-3.1.0.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/ionic.bundle.min.js"></script>
-<script src="../js/angular.min.js"></script>
-<script src="../js/angular-ui-router.min.js"></script>
-<script src="../js/pubapp.js"></script>
+<script src="jquery-3.1.0.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="ionic.bundle.min.js"></script>
+<script src="angular.min.js"></script>
+<script src="angular-ui-router.min.js"></script>
+<script src="pubapp.js"></script>
 <script type="text/javascript">
     //创建和初始化地图函数：
     function initMap(){
@@ -54,7 +54,6 @@
         map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
         window.map = map;//将map变量存储在全局
     }
-
     //地图事件设置函数：
     function setMapEvent(){
         map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
@@ -69,8 +68,6 @@
         var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_ZOOM});
         map.addControl(ctrl_nav);
     }
-
-
     initMap();//创建和初始化地图
 </script>
 </body>
